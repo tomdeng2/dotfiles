@@ -6,7 +6,6 @@ return {
     lazy = false,
     config = function()
       require("catppuccin").setup {
-        flavour = "latte",
         transparent_background = true,
       }
 
