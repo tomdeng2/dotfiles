@@ -26,13 +26,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        ruff_lsp = {
-          init_options = {
-            settings = {
-              args = { "--max-line-length=180" },
-            },
-          },
-        },
+        ruff_lsp = {},
         pyright = {
           settings = {
             python = {
@@ -74,8 +68,7 @@ return {
     dependencies = {
       "mfussenegger/nvim-dap-python",
       config = function()
-        local path = require("mason-registry").get_package("debugpy"):get_install_path()
-        require("dap-python").setup(require("dap-python").setup(path .. "/venv/bin/python")) -- Use default python
+        require("dap-python").setup "~/.virtualenvs/debugpy/bin/python"
       end,
     },
   },
