@@ -8,33 +8,4 @@ return {
       }
     end,
   },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    version = "v2.20.8",
-    opts = {
-      char = "▏",
-    },
-    event = "VeryLazy",
-  },
-  {
-    "echasnovski/mini.indentscope",
-    opts = { symbol = "▏" },
-    event = "VeryLazy",
-  },
-  {
-    "NvChad/nvim-colorizer.lua",
-    event = "BufRead",
-    config = true,
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = {
-      theme = "catppuccin",
-      options = {
-        component_separators = " ",
-        section_separators = { left = "", right = "" },
-      },
-    },
-  },
 }
